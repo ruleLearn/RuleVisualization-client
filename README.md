@@ -1,13 +1,11 @@
-# rule-visualization
+# RuleVisualization-client (forked from https://github.com/mateuszl1995/rule-visualization)
 
 ### Application
-Application with run instructions is available in ZIP file.
 Requirements: Java 8 (or higher), Web Browser.
-Run application: readme.txt file.
 
 ### Server - source code
 Tags: REST, Java, Jersey
-https://github.com/mateuszl1995/ruleVisualization
+https://github.com/ruleLearn/RuleVisualization-server
 
 ### Compiles and hot-reloads for development
 ```
