@@ -5,7 +5,13 @@ Requirements: Java 8 (or higher), Web Browser.
 
 ### Server - source code
 Tags: REST, Java, Jersey
-https://github.com/ruleLearn/RuleVisualization-server
+<br>
+[https://github.com/ruleLearn/RuleVisualization-server](https://github.com/ruleLearn/RuleVisualization-server)
+
+### Installs modules defined in `package.json` (first project run)
+```
+npm install
+```
 
 ### Compiles and hot-reloads for development
 ```
@@ -19,5 +25,5 @@ npm run build
 
 ### Runs server needed for application
 ```
-java -jar <server_path>/server.jar
+java -jar <server_path>/server.jar <optional-server-port>
 ```
