@@ -27,3 +27,8 @@ npm run build
 ```
 java -jar <server_path>/server.jar <optional-server-port>
 ```
+
+### User documentation
+[https://github.com/ruleLearn/RuleVisualization-documentation](https://github.com/ruleLearn/RuleVisualization-documentation) (tex files)
+<br>
+[https://github.com/ruleLearn/RuleVisualization-documentation/releases](https://github.com/ruleLearn/RuleVisualization-documentation/releases) (pdf releases)
