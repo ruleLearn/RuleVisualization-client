@@ -64,7 +64,7 @@ export default {
 			files: {},
 			demoFolder: '',
 			serverUrl: 'http://localhost:8081',
-			demoList: ['prioritisation', 'windsor'],
+			demoList: ['car', 'prioritisation', 'windsor'],
 		};
 	},
 	methods: { 
