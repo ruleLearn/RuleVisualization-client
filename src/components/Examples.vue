@@ -2,7 +2,8 @@
     <div v-show="attributes.length > 0" style="float: left;">
 	<div class="d-flex flex-row">
 		<h5>Examples</h5>
-		<img width="25px" height="25px" src="img/help.png" alt="help icon" data-toggle="tooltip" title="Click on a rule to display only examples covered by that rule.">
+        <img width="25px" height="25px" src="img/help.png" alt="help icon" data-toggle="tooltip" title="Click on an example to load its evaluations below.
+Click on conditions of a rule to display only examples covered by that rule.">
     </div>
 	<div class="examples scrollbar">
         <table class="table table-sm">
@@ -45,6 +46,9 @@
     <button @click="reset" class="btn btn-sm btn-primary">Reset</button>
     <button @click="match" class="btn btn-sm btn-success">Match</button>
 	<button class="btn btn-sm btn-secondary" @click="download">Download</button>
+    <img width="25px" height="25px" src="img/help.png" alt="help icon" data-toggle="tooltip" title="Click on Reset to show again rules matching any example.
+Click on Match to show only rules covering loaded example.
+Click on Download to download modified set of examples.">
     </div>
 </template>
 

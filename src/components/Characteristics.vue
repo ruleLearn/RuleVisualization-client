@@ -5,7 +5,7 @@
                 <tr>
                     <th>Display name</th>
                     <!-- <th>Active</!-->
-                    <th>Table</th>
+                    <th>Rules</th>
                     <th>Filter</th>
                     <th>Min</th>
                     <th>Max</th>

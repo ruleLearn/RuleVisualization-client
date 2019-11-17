@@ -274,7 +274,7 @@ function loadAttributes(data) {
 			range: attr.preferenceType != "none" ? [attr.min, attr.max] : []
 		});
 	}
-	data.sort((a, b) => a.active > b.active || (a.active == b.active && a.name < b.name) ? -1 : 1 );
+	//data.sort((a, b) => a.active > b.active || (a.active == b.active && a.name < b.name) ? -1 : 1 ); //[m.szelag,fix] do not change original order of attributes!
 }
 
 function isNumeric(n) { 
@@ -322,14 +322,14 @@ function loadCharacteristics(characteristics, rules) {
 		'Coverage': {min: 0, max: n},
 		'CoverageFactor': {min: 0, max: 1},
 		'Epsilon': {min: 0, max: 1},
-		'EpsilonPrime': {min: 0, max: 0},
+		'EpsilonPrime': {min: 0, max: 1}, //TODO: fix (max value can be greater than 1)
 		'NegativeCoverage': {min: 0, max: n},
 		'Strength': {min: 0, max: 1},
 		'Support': {min: 0, max: n},
 		'AConfirmation': {min: -1, max: 1},
 		'C1Confirmation': {min: 0, max: 0},
 		'FConfirmation': {min: -1, max: 1},
-		'LConfirmation': {min: 0, max: 1},
+		'LConfirmation': {min: Number.NEGATIVE_INFINITY, max: Number.POSITIVE_INFINITY}, //[m.szelag,fix] corrected range of confirmation measure L
 		'SConfirmation': {min: -1, max: 1},
 		'ZConfirmation': {min: -1, max: 1},
 	}

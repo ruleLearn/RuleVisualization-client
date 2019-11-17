@@ -50,7 +50,7 @@
 				<button @click="generate" class="btn btn-sm btn-success">Refresh</button>
 				<button @click="$parent.computeSrcLinks" class="btn btn-sm btn-info">Recompute</button>
 				<img width="25px" height="25px" src="img/help.png" alt="help icon" data-toggle="tooltip" 
-				:title="'In most cases use Refresh after applying filters, changing some visual options and physics. Recompute should be only used after modifications of examples and sending them to server.'">
+				:title="'In most cases use \'Refresh\' after applying filters, changing some visual options and physics.\n\'Recompute\' should be only used after modifications of examples and sending them to server.'">
 			</div>
 			<div>
 				<input type="checkbox" v-model="advanced">
@@ -66,8 +66,8 @@
 		</div>
 		<div id="graph-rule" class="d-flex flex-row">
 			<table class="table-sm" v-if="rule != undefined"><tr>
-				<td>{{ rule.id }}</td>
-				<td @click="setRule(rule.id)" class="condition" v-html="conditionsToString(rule.conditions)"></td>
+				<td>{{ rule.id }}:</td>
+				<td @click="setRule(rule.id)" class="condition" v-html="conditionsToString(rule.conditions)+'&nbsp;&nbsp;=>'"></td>
 			</tr><tr>
 				<td></td>
 				<td v-html="decisionsToString(rule.decisions)"></td>

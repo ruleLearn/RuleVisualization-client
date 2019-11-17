@@ -27,7 +27,7 @@
 				</tr>
 			</template>
 		</table></div>
-		<b>Average characteristics</b>
+		<div><b>Average characteristics</b><img width="25px" height="25px" src="img/help.png" alt="help icon" data-toggle="tooltip" title="Click on a characteristic to see its histogram of values observed in rules."></div>
 		<div class="scrollbar"><table class="table table-sm" v-if="stats != undefined">
 			<template v-for="(value, name) in stats.characteristics">
 				<tr :key="name"> <!--v-if="characteristics[name].active"-->
@@ -81,7 +81,7 @@ export default {
 		  {name: ' by importance', value: 'count2'}
 	  ],
 	  histogramBuckets: 10,
-	  tooltipMsg: 'Count mode: occurences of every attribute\nImportance mode: every occurence is multiplied\nby rule strength and normalized by average rule strength'
+	  tooltipMsg: 'Mode "by count": shows number and percentage of rules using each attribute.\nMode "by importance": every occurence is multiplied by rule strength and normalized by average rule strength.\nClick on an attribute to see its observed domain and histogram of observed evaluations.'
   }},
   props: {
 	  attributes: Array,
