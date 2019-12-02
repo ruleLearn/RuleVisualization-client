@@ -1,4 +1,4 @@
-# RuleVisualization-client (forked from https://github.com/mateuszl1995/rule-visualization)
+# RuleVisualization-client (forked from [https://github.com/mateuszl1995/rule-visualization](https://github.com/mateuszl1995/rule-visualization))
 
 ### Application
 Requirements: Java 8 (or higher), Web Browser.
